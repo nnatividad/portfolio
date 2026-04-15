@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Courier_Prime, PT_Sans } from "next/font/google";
+import NavBar from "@/app/components/layout/Navbar";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const courierPrime = Courier_Prime({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-courier-prime',
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const ptSans = PT_Sans({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-pt-sans',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,8 +26,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+    <html lang="en" className={`${courierPrime.variable} ${ptSans.variable}`}>
+      <body>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
