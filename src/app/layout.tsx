@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Courier_Prime, PT_Sans } from "next/font/google";
 import NavBar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
 import "./globals.css";
 
 const courierPrime = Courier_Prime({
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

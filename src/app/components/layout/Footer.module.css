@@ -1,0 +1,10 @@
+.footer {
+    background: white;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: var(--font-courier-prime);
+}

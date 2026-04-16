@@ -1,7 +1,9 @@
+import styles from './Footer.module.css'
+
 export default function Footer(){
     return(
-        <div>
-            Footer Component
+        <div className={styles.footer}>
+            nate natividad ~ 2026
         </div>
     );
 }
