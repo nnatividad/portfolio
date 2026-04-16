@@ -1,16 +1,23 @@
-import styles from "./NavBar.module.css"
+"use client";
 
-export default function Navbar(){
-    return(
-        <div className={styles.navContainer}>
-            <div className={styles.leftSide}>
-                <h1>nate natividad.</h1>
-            </div>
-            <div className={styles.rightSide}>
-                <button>projects</button>
-                <button>experience</button>
-                <button>contact</button>
-            </div>
-        </div>
-    );
+import styles from "./NavBar.module.css";
+
+export default function Navbar() {
+  const handleScroll = (id: string) => {
+    const section = document.getElementById(id);
+    section?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  return (
+    <div className={styles.navContainer}>
+      <div className={styles.leftSide}>
+        <h1>nate natividad.</h1>
+      </div>
+      <div className={styles.rightSide}>
+        <button type="button" onClick={() => handleScroll("projects")}>projects</button>
+        <button type="button" onClick={() => handleScroll("experience")}>experience</button>
+        <button type="button" onClick={() => handleScroll("contact")}>contact</button>
+      </div>
+    </div>
+  );
 }

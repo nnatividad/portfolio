@@ -3,6 +3,8 @@ import styles from "./page.module.css";
 import profilePic from "../../public/profilePic.jpeg";
 import ASTN from "../../public/ASTN.jpeg";
 import RobsGarments from "../../public/robsGarments.png";
+import HousingMarket from "../../public/housing.png";
+import ContactForm from "@/app/components/contact/ContactForm";
 
 
 export default function Home() {
@@ -21,7 +23,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.componentContainer}>
-        <div className={styles.about}>
+        <div id="about" className={styles.about}>
           <div className={styles.title}><h1>ABOUT</h1></div>
           <div className={styles.textContainer}>
             <p>
@@ -31,7 +33,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className={styles.experience}>
+        <div id="experience" className={styles.experience}>
           <div className={styles.title}><h1>EXPERIENCE</h1></div>
           <div className={styles.experienceContainer}>
             <ul>
@@ -47,7 +49,7 @@ export default function Home() {
                     </div>
                     <div className={styles.textContainer}>
                       <p>
-                        Built the MVP architecture for a mobile athlete marketplace from the ground up using React Native, Expo, and Firebase. 
+                        Built the initial MVP architecture for a mobile athlete marketplace from the ground up using React Native, Expo, and Firebase. 
                         Owned the full development of user onboarding, profile management, and marketplace UI, working closely with product design to deliver an experience aligned with the company's vision. 
                         Established Git-based version control workflows and documented engineering standards with the broader team. 
                         Collaborated directly with leadership to translate business requirements into scalable technical solutions.
@@ -59,7 +61,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className={styles.projects}>
+        <div id="projects" className={styles.projects}>
           <div className={styles.title}><h1>PROJECTS</h1></div>
           <div className={styles.experienceContainer}>
             <ul>
@@ -79,7 +81,28 @@ export default function Home() {
                     <div className={styles.textContainer}>
                       <p>
                         A custom e-commerce platform for Robin's Garments. Local to the Bay Area, a business that curates and sells vintage
-                        clothing and sccessories. Built using Next.js, React, Vercel, Sanity, and Stripe.
+                        clothing and accessories. Built using Next.js, React, Vercel, Sanity, and Stripe.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className={styles.jobInfo}>
+                  <div>
+                    <Image src={HousingMarket} alt="housing market analysis" height={600} width={800} className={styles.image}/>
+                  </div>
+                  <div>
+                    <div className={styles.jobTitle}>
+                      <h2>Housing Market Analysis</h2>
+                      <div className={styles.projectLinks}>
+                        <a href="https://github.com/nnatividad/HousingAnalysis/tree/main"><u>repo</u></a>
+                      </div>
+                    </div>
+                    <div className={styles.textContainer}>
+                      <p>
+                        College senior design project focused on using big data technologies. 
+                        My main contribution to this project is developing an interactive data visualization dashboard with Flask, HTML, and CSS, integrating with a PostgreSQL database to allow users to query and explore housing data across the U.S. through an interactive map.
                       </p>
                     </div>
                   </div>
@@ -88,8 +111,11 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className={styles.contact}>
+        <div id="contact" className={styles.contact}>
           <div className={styles.title}><h1>CONTACT</h1></div>
+          <div className={styles.contactForm}>
+            <ContactForm />
+          </div>
         </div>
       </div>
       <div>

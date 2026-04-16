@@ -57,12 +57,64 @@
     align-items: center;
     width: 90%;
     height: auto;
+    padding-bottom: 20px;
 }
 
 .title {
     background: #d4cec4;
     width: 100%;
     padding: 10px;
+}
+
+.contactForm {
+    width: 100%;
+    padding: 20px;
+}
+
+.contactFormGrid {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 24px;
+    width: 100%;
+}
+
+.contactFormSide {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.submitButton {
+    width: fit-content;
+    padding: 12px 24px;
+    border-radius: 14px;
+    border: 1px solid #b0a898;
+    background: #e8e2d8;
+    cursor: pointer;
+    font-family: var(--font-courier-prime);
+    text-transform: lowercase;
+}
+
+.feedbackMessage {
+    margin-top: 12px;
+    width: 100%;
+    color: #2a2a2a;
+    font-size: 16px;
+    font-family: var(--font-pt-sans);
+}
+
+@media (max-width: 920px) {
+    .contactFormGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .projectLinks {
+        width: auto;
+    }
+
+    .rightSide button {
+        width: auto;
+    }
 }
 
 .textContainer {
@@ -76,6 +128,7 @@
 
 .experienceContainer ul{
     list-style-type: none;
+    line-height: 20px;
 }
 
 .jobInfo {
