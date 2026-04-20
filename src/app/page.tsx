@@ -27,9 +27,10 @@ export default function Home() {
           <div className={styles.title}><h1>ABOUT</h1></div>
           <div className={styles.textContainer}>
             <p>
-              My name is Nate Natividad, and this is my portfolio. I graduated from UC Riverside in 2024 with my degree in Computer Science.
-              I'm currently building a custom e-commerce platform called rob's garments to sell curated vintage clothing. I'm seeking opportunities
-              in software engineering. I'm interested in solving new problems, and I write code that will make sense later.
+              I'm Nate Natividad, a software engineer and web developer based in the Bay Area. 
+              I build things for businesses that need a real web presence — e-commerce stores, portfolio sites, custom platforms, whatever the problem calls for. 
+              I graduated from UC Riverside in 2024 with a degree in Computer Science and I'm currently seeking full-time software engineering roles alongside freelance work. 
+              Outside of work, I workout, play golf, and indulge in lots of video games lol. Let's connect.
             </p>
           </div>
         </div>
@@ -74,7 +75,7 @@ export default function Home() {
                     <div className={styles.jobTitle}>
                       <h2>Robin's Garments</h2>
                       <div className={styles.projectLinks}>
-                        <a href="https://robs-garments.vercel.app/"><u>site</u></a>
+                        <a href="https://robs-garments.vercel.app/"><u>live site (wip)</u></a>
                         <a href="https://github.com/nnatividad/robs-garments"><u>repo</u></a>
                       </div>
                     </div>

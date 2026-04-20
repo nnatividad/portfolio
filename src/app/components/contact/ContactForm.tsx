@@ -1,24 +1,22 @@
 "use client";
 
 import styles from "@/app/page.module.css";
-import SubjectField from "@/app/components/contact/SubjectField";
-import EmailField from "@/app/components/contact/EmailField";
-import MessageField from "@/app/components/contact/MessageField";
 
 export default function ContactForm() {
   return (
-    <form className={styles.contactFormGrid}>
-      <div className={styles.contactFormSide}>
-        <SubjectField />
-        <EmailField />
-        <button type="submit" className={styles.submitButton}>
-          submit
-        </button>
+    <div className={styles.contactContent}>
+      <p className={styles.contactMessage}>
+        I'm open to full-time roles and freelance work. Reach out anytime — I'd love to hear from you.
+      </p>
+      <div className={styles.contactLinks}>
+        <a href="mailto:natetividad@gmail.com" className={styles.contactLink}>
+          <u>{"-->email"}</u>
+        </a>
+        <a href="https://www.linkedin.com/in/nathaniel-natividad-bb3871227/" className={styles.contactLink}>
+          <u>{"-->linkedin"}</u>
+        </a>
       </div>
-      <div className={styles.contactFormSide}>
-        <MessageField />
-      </div>
-    </form>
+    </div>
   );
 }
 

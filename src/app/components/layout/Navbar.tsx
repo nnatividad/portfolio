@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <div className={styles.navContainer}>
       <div className={styles.leftSide}>
-        <h1>nate natividad.</h1>
+        <h1>welcome to my portfolio!</h1>
       </div>
       <div className={styles.rightSide}>
         <button type="button" onClick={() => handleScroll("projects")}>projects</button>
