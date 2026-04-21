@@ -75,8 +75,7 @@ export default function Home() {
                     <div className={styles.jobTitle}>
                       <h2>Robin's Garments</h2>
                       <div className={styles.projectLinks}>
-                        <a href="https://robs-garments.vercel.app/"><u>live site (wip)</u></a>
-                        <a href="https://github.com/nnatividad/robs-garments"><u>repo</u></a>
+                        <a href="https://github.com/nnatividad/robs-garments"><u>github repo</u></a>
                       </div>
                     </div>
                     <div className={styles.textContainer}>
