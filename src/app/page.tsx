@@ -96,7 +96,7 @@ export default function Home() {
                     <div className={styles.jobTitle}>
                       <h2>Housing Market Analysis</h2>
                       <div className={styles.projectLinks}>
-                        <a href="https://github.com/nnatividad/HousingAnalysis/tree/main"><u>repo</u></a>
+                        <a href="https://github.com/nnatividad/HousingAnalysis/tree/main"><u>github repo</u></a>
                       </div>
                     </div>
                     <div className={styles.textContainer}>
