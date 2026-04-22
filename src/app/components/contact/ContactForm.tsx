@@ -6,7 +6,7 @@ export default function ContactForm() {
   return (
     <div className={styles.contactContent}>
       <p className={styles.contactMessage}>
-        I'm open to full-time roles and freelance work. Reach out anytime — I'd love to hear from you.
+        I&apos;m open to full-time roles and freelance work. Reach out anytime — I&apos;d love to hear from you.
       </p>
       <div className={styles.contactLinks}>
         <a href="mailto:natetividad@gmail.com" className={styles.contactLink}>

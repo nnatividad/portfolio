@@ -11,14 +11,20 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <div className={styles.infoContainer}>
-        <Image src={profilePic} alt="profile image" height={600} width={800} className={styles.image} loading="eager"/>
+        <Image
+          src={profilePic}
+          alt="profile image"
+          height={600}
+          width={800}
+          className={`${styles.image} ${styles.profileImage}`}
+          loading="eager"
+        />
         <div className={styles.info}>
           <h2>Nate Natividad</h2>
           <p>B.S in Computer Science from UC Riverside</p>
           <ul>
             <li><a href="https://github.com/nnatividad"><u>{"-->github"}</u></a></li>
             <li><a href="https://www.linkedin.com/in/nathaniel-natividad-bb3871227/"><u>{"-->linkedIn"}</u></a></li>
-            <li><a href="/"><u>{"-->resume"}</u></a></li>
           </ul>
         </div>
       </div>
@@ -27,10 +33,10 @@ export default function Home() {
           <div className={styles.title}><h1>ABOUT</h1></div>
           <div className={styles.textContainer}>
             <p>
-              I'm Nate Natividad, a software engineer and web developer based in the Bay Area. 
+              I&apos;m Nate Natividad, a software engineer and web developer based in the Bay Area. 
               I build things for businesses that need a real web presence — e-commerce stores, portfolio sites, custom platforms, whatever the problem calls for. 
-              I graduated from UC Riverside in 2024 with a degree in Computer Science and I'm currently seeking full-time software engineering roles alongside freelance work. 
-              Outside of work, I workout, play golf, and indulge in lots of video games lol. Let's connect.
+              I graduated from UC Riverside in 2024 with a degree in Computer Science and I&apos;m currently seeking full-time software engineering roles alongside freelance work. 
+              Outside of work, I workout, play golf, and indulge in lots of video games lol. Let&apos;s connect.
             </p>
           </div>
         </div>
@@ -47,11 +53,14 @@ export default function Home() {
                     <div className={styles.jobTitle}>
                       <h2>Full Stack Developer</h2>
                       <h3>Oct 2024 - Oct 2025</h3>
+                      <div className={styles.projectLinks}>
+                        <a href="https://www.youtube.com/shorts/J9E_AnZEsGU"><u>work demo</u></a>
+                      </div>
                     </div>
                     <div className={styles.textContainer}>
                       <p>
                         Built the initial MVP architecture for a mobile athlete marketplace from the ground up using React Native, Expo, and Firebase. 
-                        Owned the full development of user onboarding, profile management, and marketplace UI, working closely with product design to deliver an experience aligned with the company's vision. 
+                        Owned the full development of user onboarding, profile management, and marketplace UI, working closely with product design to deliver an experience aligned with the company&apos;s vision. 
                         Established Git-based version control workflows and documented engineering standards with the broader team. 
                         Collaborated directly with leadership to translate business requirements into scalable technical solutions.
                       </p>
@@ -73,14 +82,14 @@ export default function Home() {
                   </div>
                   <div>
                     <div className={styles.jobTitle}>
-                      <h2>Robin's Garments</h2>
+                      <h2>Robin&apos;s Garments</h2>
                       <div className={styles.projectLinks}>
                         <a href="https://github.com/nnatividad/robs-garments"><u>github repo</u></a>
                       </div>
                     </div>
                     <div className={styles.textContainer}>
                       <p>
-                        A custom e-commerce platform for Robin's Garments. Local to the Bay Area, a business that curates and sells vintage
+                        A custom e-commerce platform for Robin&apos;s Garments. Local to the Bay Area, a business that curates and sells vintage
                         clothing and accessories. Built using Next.js, React, Vercel, Sanity, and Stripe.
                       </p>
                     </div>

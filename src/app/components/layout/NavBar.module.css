@@ -29,7 +29,7 @@
     background: white;
     border: 1.5px solid;
     border-color: #b0a898;
-    text-color: #444;
+    color: #444;
     padding: 5px;
     cursor: pointer;
     transition: 0.4s;
@@ -39,4 +39,29 @@
 .rightSide button:hover {
     background: #e8e2d8;
     color: black;
+}
+
+@media (max-width: 768px) {
+    .navContainer {
+        flex-direction: column;
+        gap: 10px;
+        padding: 14px 10px;
+    }
+
+    .leftSide {
+        width: 100%;
+        text-align: center;
+    }
+
+    .rightSide {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .rightSide button {
+        width: auto;
+        min-width: 110px;
+    }
 }

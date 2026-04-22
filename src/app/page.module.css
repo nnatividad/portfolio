@@ -40,7 +40,11 @@
     width: 100%;
     height: auto;
     border: 2.5px solid #8a7e6e;
-    aspect-ration: 3/4;
+}
+
+.profileImage {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 .componentContainer {
@@ -116,6 +120,70 @@
 
     .rightSide button {
         width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .page {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .infoContainer {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 0;
+        gap: 14px;
+    }
+
+    .profileImage {
+        width: 110px;
+        max-width: 110px;
+        flex: 0 0 110px;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .info ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        line-height: 22px;
+    }
+
+    .componentContainer {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .about, .experience, .projects, .contact {
+        width: 100%;
+    }
+
+    .jobInfo {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .jobTitle {
+        align-items: flex-start;
+    }
+
+    .jobInfo .image {
+        max-width: 160px;
+    }
+}
+
+@media (max-width: 420px) {
+    .textContainer {
+        font-size: 16px;
+    }
+
+    .jobInfo .image {
+        max-width: 140px;
     }
 }
 

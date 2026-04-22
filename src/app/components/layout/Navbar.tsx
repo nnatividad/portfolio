@@ -14,8 +14,8 @@ export default function Navbar() {
         <h1>welcome to my portfolio!</h1>
       </div>
       <div className={styles.rightSide}>
-        <button type="button" onClick={() => handleScroll("projects")}>projects</button>
         <button type="button" onClick={() => handleScroll("experience")}>experience</button>
+        <button type="button" onClick={() => handleScroll("projects")}>projects</button>
         <button type="button" onClick={() => handleScroll("contact")}>contact</button>
       </div>
     </div>
