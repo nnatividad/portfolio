@@ -14,8 +14,8 @@ export default function Home() {
         <Image
           src={profilePic}
           alt="profile image"
-          height={600}
-          width={800}
+          height={700}
+          width={900}
           className={`${styles.image} ${styles.profileImage}`}
           loading="eager"
         />
